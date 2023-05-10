@@ -17,7 +17,7 @@ public class GameList {
     }
 
     public GameList() {
-        
+
     }
 
     public Long getId() {

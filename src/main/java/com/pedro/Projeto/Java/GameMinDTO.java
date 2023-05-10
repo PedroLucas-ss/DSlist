@@ -2,6 +2,7 @@ package com.pedro.Projeto.Java;
 
 
 import com.pedro.Projeto.Java.entities.Game;
+import com.pedro.Projeto.Java.projections.GameMinProjection;
 
 public class GameMinDTO {
 
@@ -22,6 +23,15 @@ public class GameMinDTO {
        imgUrl = entity.getImgUrl();
        shortDescripition = entity.getShortDescripition();
     }
+
+    public GameMinDTO(GameMinProjection projection) {
+        id = projection.getId();
+        title = projection.getTitle();
+        year = projection.getYear();
+        imgUrl = projection.getImgUrl();
+        shortDescripition = projection.getShortDescripition();
+    }
+
 
     public Long getId() {
         return id;
