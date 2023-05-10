@@ -16,6 +16,10 @@ public class GameList {
         this.name = name;
     }
 
+    public GameList() {
+        
+    }
+
     public Long getId() {
         return id;
     }
